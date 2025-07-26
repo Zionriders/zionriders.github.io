@@ -1,10 +1,142 @@
-DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Zion Riders</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zion Riders – Under His Mighty Grace</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+    nav {
+      background: #374151;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: #1f2937;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #374151;
+    }
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Zion Riders</h1>
-  <p>This is our official website, under God's mighty grace.</p>
+  <header>
+    <h1>Zion Riders</h1>
+    <p>Serving under God's mighty grace – Maggie and Abhoy</p>
+  </header>
+
+  <nav>
+    <a href="#destinations">Destinations</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#suggest">Suggest a Trip</a>
+  </nav>
+
+  <section id="destinations">
+    <h2>🌍 Destinations We Cover</h2>
+    <ul>
+      <li><strong>India:</strong> Ladakh, Himachal, Sikkim, Northeast, South India & more</li>
+      <li><strong>Nepal:</strong> Pokhara, Mustang, Kathmandu Valley, and beyond</li>
+      <li><strong>Bhutan:</strong> Thimphu, Paro, and Punakha</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>📸 Our Riding Gallery</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/featured/?motorcycle,roadtrip" alt="Ride 1" />
+      <img src="https://source.unsplash.com/featured/?bike,ladakh" alt="Ride 2" />
+      <img src="https://source.unsplash.com/featured/?mountains,motorbike" alt="Ride 3" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact Us</h2>
+    <form action="mailto:zionridersmail@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="email" name="Email" placeholder="Your Email" required />
+      <textarea name="Message" rows="5" placeholder="Write your message here..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section id="suggest">
+    <h2>🛣️ Suggest Your Own Destination</h2>
+    <p>Got a dream route in mind? Share it with us and let's ride together!</p>
+    <form action="mailto:zionridersmail@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="text" name="Destination" placeholder="Suggest a Place" required />
+      <textarea name="Details" rows="4" placeholder="Why do you want to go there?"></textarea>
+      <button type="submit">Suggest Destination</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Zion Riders | Every Mile, His Grace | Designed by Abhoy Roy
+  </footer>
 </body>
 </html>
