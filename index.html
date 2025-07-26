@@ -1,39 +1,97 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zion Riders</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; }
-    header { background-color: #1e293b; color: white; padding: 20px; text-align: center; }
-    nav { background: #334155; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    .hero { text-align: center; padding: 30px; }
-    .hero img { max-width: 80%; height: auto; border-radius: 12px; }
-    section { padding: 30px; }
-    h2 { color: #1e293b; }
-    .gallery { display: flex; flex-wrap: wrap; gap: 20px; }
-    .gallery-item { background: white; padding: 15px; border-radius: 10px; width: calc(33% - 20px); box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    .gallery-item img { width: 100%; border-radius: 8px; }
-    .comment-section, .contact-section, .rent-info { margin-top: 40px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    footer { background: #1e293b; color: white; text-align: center; padding: 15px; }
-    .form-group { margin-bottom: 15px; }
-    label { display: block; margin-bottom: 5px; }
-    input, textarea, select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0 1rem;
+      background: #f9f9f9;
+    }
+    header, footer {
+      background: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      margin: 2rem 0;
+    }
+    h1, h2 {
+      color: #444;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 2rem;
+    }
+    .gallery-item {
+      margin-bottom: 1rem;
+    }
+    .comment-box input,
+    .comment-box textarea,
+    .comment-box select {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+    }
+
+    /* ✅ Hero Background */
+    #hero {
+      background: url('hero-bg.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 6rem 1rem;
+      text-align: center;
+    }
+
+    /* ✅ Photo Upload Gallery */
+    #photo-gallery {
+      padding: 2rem 1rem;
+      background: #fff;
+    }
+    #photo-gallery h2 {
+      margin-bottom: 1rem;
+    }
+    #photo-upload {
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Zion Riders</h1>
+    <h1># Zion Riders</h1>
     <p>Riding Together, Living Under Grace</p>
-  </header>  <nav>
+  </header>
+
+  <nav>
     <a href="#destinations">Destinations</a>
     <a href="#gallery">Gallery</a>
     <a href="#comments">Comments</a>
     <a href="#contact">Contact</a>
-  </nav>  <div class="hero">
-    <img src="A_website_homepage_for_Zion_Riders,_a_motorcycle_t.png" alt="Zion Riders Hero Image">
-  </div>  <section id="destinations">
+  </nav>
+
+  <section id="hero">
+    <h2>Zion Riders Hero Image</h2>
+  </section>
+
+  <section id="destinations">
     <h2>Domestic Destinations</h2>
     <ul>
       <li>North Bengal: Kalimpong, Lava, Dooars, Neora Valley, Rishop</li>
@@ -41,60 +99,68 @@
       <li>North India: Spiti Valley, Leh-Ladakh</li>
       <li>South India: Goa, Pondicherry</li>
       <li>East India: Puri (Beachside), Vizag</li>
-    </ul><h2>International Destinations *</h2>
-<ul>
-  <li>Nepal: Kathmandu, Pokhara, Manang, Lower Mustang, Chitwan</li>
-  <li>Bhutan: Paro, Thimphu, Punakha Valley</li>
-  <li>Other (Destination of your choice)</li>
-</ul>
-<p><em>*Extra international travel costs apply</em></p>
+    </ul>
 
-  </section>  <section id="gallery">
+    <h2>International Destinations *</h2>
+    <ul>
+      <li>Nepal: Kathmandu, Pokhara, Manang, Lower Mustang, Chitwan</li>
+      <li>Bhutan: Paro, Thimphu, Punakha Valley</li>
+      <li>Other (Destination of your choice)</li>
+    </ul>
+    <p><em>*Extra international travel costs apply</em></p>
+  </section>
+
+  <section id="gallery">
     <h2>Gallery</h2>
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Pokhara_Lake_Sunset.jpg" alt="Pokhara">
-        <p><strong>Pokhara</strong> – Stunning lakeside rides with peaceful views.</p>
-      </div>
-      <div class="gallery-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Chitwan_National_Park.jpg" alt="Chitwan">
-        <p><strong>Chitwan</strong> – Wildlife ride through the national park roads.</p>
-      </div>
-      <div class="gallery-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Paro_Bhutan.jpg" alt="Paro">
-        <p><strong>Paro, Bhutan</strong> – Scenic mountain roads and peaceful valleys.</p>
-      </div>
+
+    <div class="gallery-item">
+      <strong>Pokhara</strong> – Stunning lakeside rides with peaceful views.
     </div>
-  </section>  <section id="comments" class="comment-section">
+    <div class="gallery-item">
+      <strong>Chitwan</strong> – Wildlife ride through the national park roads.
+    </div>
+    <div class="gallery-item">
+      <strong>Paro, Bhutan</strong> – Scenic mountain roads and peaceful valleys.
+    </div>
+  </section>
+
+  <section id="comments">
     <h2>Comment Box</h2>
-    <form>
-      <div class="form-group">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name">
-      </div>
-      <div class="form-group">
-        <label for="comment">Your Comment</label>
-        <textarea id="comment" name="comment" rows="4"></textarea>
-      </div>
-      <div class="form-group">
-        <label for="visibility">Visibility</label>
-        <select id="visibility" name="visibility">
-          <option value="public">Public</option>
-          <option value="private">Private (Visible to admin only)</option>
-        </select>
-      </div>
+    <div class="comment-box">
+      <input type="text" placeholder="Your Name" />
+      <textarea placeholder="Your Comment"></textarea>
+      <select>
+        <option value="public">Public</option>
+        <option value="private">Private (Visible to admin only)</option>
+      </select>
       <button type="submit">Submit</button>
-    </form>
-  </section>  <section class="rent-info">
+    </div>
+  </section>
+
+  <section id="bike-rentals">
     <h2>Bike Rentals</h2>
     <p>Available on demand. Please contact us in advance for details and rates.</p>
-  </section>  <section id="contact" class="contact-section">
+  </section>
+
+  <section id="contact">
     <h2>Contact Us</h2>
     <p>Email: [your-gmail-here]@gmail.com</p>
     <p>Phone: +91-XXXXXXXXXX</p>
-    <p>Instagram: @zion_riders</p>
-  </section>  <footer>
-    <p>&copy; 2025 Zion Riders. Serving under God's mighty grace.</p>
+    <p>Instagram: <a href="https://instagram.com/zion_riders" target="_blank">@zion_riders</a></p>
+  </section>
+
+  <!-- ✅ NEW: Photo Upload Gallery Placeholder -->
+  <section id="photo-gallery">
+    <h2>Upload Ride Photos</h2>
+    <form id="photo-upload">
+      <input type="file" accept="image/*" multiple />
+      <button type="submit">Upload</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Zion Riders. Serving under God's mighty grace.</p>
   </footer>
+
 </body>
 </html>
