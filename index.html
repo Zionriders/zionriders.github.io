@@ -1,205 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zionriders | Under His Mighty Grace</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zion Riders</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #111;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    header img {
-      max-height: 80px;
-    }
-    nav {
-      background: #222;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .hero {
-      background: url('https://i.imgur.com/jFjX2du.jpg') center/cover no-repeat;
-      color: white;
-      padding: 100px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.2em;
-    }
-    .btn {
-      background: #1e90ff;
-      color: white;
-      padding: 10px 20px;
-      margin-top: 20px;
-      text-decoration: none;
-      display: inline-block;
-      border-radius: 6px;
-    }
-    .btn:hover {
-      background: #0066cc;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-    }
-    .gallery img {
-      width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
-    h2 {
-      text-align: center;
-      color: #444;
-      margin-bottom: 30px;
-    }
-    .merch-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .merch-item {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      overflow: hidden;
-      text-align: center;
-      padding: 20px;
-    }
-    .merch-item img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    .merch-item h3 {
-      margin: 15px 0 5px;
-    }
-    .merch-item p {
-      color: #666;
-      font-size: 0.9em;
-    }
-    footer {
-      background: #111;
-      color: #ccc;
-      text-align: center;
-      padding: 30px;
-      font-size: 0.9em;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; }
+    header { background-color: #1e293b; color: white; padding: 20px; text-align: center; }
+    nav { background: #334155; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    .hero { text-align: center; padding: 30px; }
+    .hero img { max-width: 80%; height: auto; border-radius: 12px; }
+    section { padding: 30px; }
+    h2 { color: #1e293b; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 20px; }
+    .gallery-item { background: white; padding: 15px; border-radius: 10px; width: calc(33% - 20px); box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .gallery-item img { width: 100%; border-radius: 8px; }
+    .comment-section, .contact-section, .rent-info { margin-top: 40px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    footer { background: #1e293b; color: white; text-align: center; padding: 15px; }
+    .form-group { margin-bottom: 15px; }
+    label { display: block; margin-bottom: 5px; }
+    input, textarea, select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Zion Riders</h1>
+    <p>Riding Together, Living Under Grace</p>
+  </header>  <nav>
+    <a href="#destinations">Destinations</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#comments">Comments</a>
+    <a href="#contact">Contact</a>
+  </nav>  <div class="hero">
+    <img src="A_website_homepage_for_Zion_Riders,_a_motorcycle_t.png" alt="Zion Riders Hero Image">
+  </div>  <section id="destinations">
+    <h2>Domestic Destinations</h2>
+    <ul>
+      <li>North Bengal: Kalimpong, Lava, Dooars, Neora Valley, Rishop</li>
+      <li>Sikkim</li>
+      <li>North India: Spiti Valley, Leh-Ladakh</li>
+      <li>South India: Goa, Pondicherry</li>
+      <li>East India: Puri (Beachside), Vizag</li>
+    </ul><h2>International Destinations *</h2>
+<ul>
+  <li>Nepal: Kathmandu, Pokhara, Manang, Lower Mustang, Chitwan</li>
+  <li>Bhutan: Paro, Thimphu, Punakha Valley</li>
+  <li>Other (Destination of your choice)</li>
+</ul>
+<p><em>*Extra international travel costs apply</em></p>
 
-<header>
-  <img src="https://i.imgur.com/DYUwqzK.png" alt="Zionriders Logo" />
-  <h1>Zionriders</h1>
-  <p>Under His Mighty Grace</p>
-</header>
-
-<nav>
-  <a href="#about">About</a>
-  <a href="#join">Join Us</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#mac">Mac</a>
-  <a href="#store">Store</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section class="hero">
-  <h1>Ride With Purpose</h1>
-  <p>Every ride we take is under God's mighty grace.</p>
-  <a class="btn" href="#join">Join the Ride</a>
-</section>
-
-<section id="about">
-  <h2>About Zionriders</h2>
-  <p>Zionriders is a community of passionate riders who ride with purpose and grace. Our mission is to explore God's creation and share the journey with those who believe in riding with faith.</p>
-</section>
-
-<section id="join">
-  <h2>Join Us</h2>
-  <p>If you're a biker who believes in more than just speed — if you believe in grace, in purpose, in riding with meaning — then Zionriders welcomes you.</p>
-  <a class="btn" href="mailto:zionridersfaith@gmail.com">Become a Member</a>
-</section>
-
-<section id="gallery">
-  <h2>Gallery</h2>
-  <div class="gallery">
-    <img src="https://i.imgur.com/h5ZuvNW.jpeg" alt="Ride 1" />
-    <img src="https://i.imgur.com/gCRcfGl.jpeg" alt="Ride 2" />
-    <img src="https://i.imgur.com/yrRR6jP.jpeg" alt="Ride 3" />
-    <img src="https://i.imgur.com/WzUZqFx.jpeg" alt="Ride 4" />
-  </div>
-</section>
-
-<section id="mac">
-  <h2>MAC – Machines for the Apple of the Eye</h2>
-  <p>Our MAC section is dedicated to exclusive, sleek, and elegant bikes that combine technology and grace — bikes that reflect purity, discipline, and premium craft.</p>
-  <img src="https://i.imgur.com/Q2aX3cH.jpeg" alt="Mac Bike" style="width:100%; max-width:600px; display:block; margin: 20px auto; border-radius: 10px;">
-  <a class="btn" href="#contact">Learn More</a>
-</section>
-
-<section id="store">
-  <h2>Zion Merchandise Store</h2>
-  <p style="text-align:center;">Show your faith and style on every ride. From T-shirts to helmets, stickers to keychains — represent Zionriders everywhere you go.</p>
-  <div class="merch-grid">
-    <div class="merch-item">
-      <img src="https://i.imgur.com/yFcRLzK.jpeg" alt="T-shirt" />
-      <h3>Zion T-Shirt</h3>
-      <p>Comfortable cotton with our signature logo. ₹699</p>
+  </section>  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Pokhara_Lake_Sunset.jpg" alt="Pokhara">
+        <p><strong>Pokhara</strong> – Stunning lakeside rides with peaceful views.</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Chitwan_National_Park.jpg" alt="Chitwan">
+        <p><strong>Chitwan</strong> – Wildlife ride through the national park roads.</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Paro_Bhutan.jpg" alt="Paro">
+        <p><strong>Paro, Bhutan</strong> – Scenic mountain roads and peaceful valleys.</p>
+      </div>
     </div>
-    <div class="merch-item">
-      <img src="https://i.imgur.com/UnhFy7Z.jpeg" alt="Patch" />
-      <h3>Iron-On Patch</h3>
-      <p>Perfect for jackets, bags or vests. ₹199</p>
-    </div>
-    <div class="merch-item">
-      <img src="https://i.imgur.com/nrPMJvV.jpeg" alt="Sticker Pack" />
-      <h3>Sticker Pack</h3>
-      <p>5 glossy ride-themed faith stickers. ₹149</p>
-    </div>
-  </div>
-  <div style="text-align:center; margin-top:30px;">
-    <a class="btn" href="mailto:zionridersfaith@gmail.com">Shop Now</a>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p style="text-align:center;">Email us at <strong>zionridersfaith@gmail.com</strong> to connect, collaborate, or pray together before your next ride.</p>
-</section>
-
-<footer>
-  <p>&copy; 2025 Zionriders | Serving under God's mighty grace: Maggie and Abhoy</p>
-</footer>
-
+  </section>  <section id="comments" class="comment-section">
+    <h2>Comment Box</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="comment">Your Comment</label>
+        <textarea id="comment" name="comment" rows="4"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="visibility">Visibility</label>
+        <select id="visibility" name="visibility">
+          <option value="public">Public</option>
+          <option value="private">Private (Visible to admin only)</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </section>  <section class="rent-info">
+    <h2>Bike Rentals</h2>
+    <p>Available on demand. Please contact us in advance for details and rates.</p>
+  </section>  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Email: [your-gmail-here]@gmail.com</p>
+    <p>Phone: +91-XXXXXXXXXX</p>
+    <p>Instagram: @zion_riders</p>
+  </section>  <footer>
+    <p>&copy; 2025 Zion Riders. Serving under God's mighty grace.</p>
+  </footer>
 </body>
 </html>
