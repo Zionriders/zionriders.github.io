@@ -2,141 +2,204 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zion Riders – Under His Mighty Grace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zionriders | Under His Mighty Grace</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #f4f4f4;
+      margin: 0;
+      background: #f9f9f9;
       color: #333;
     }
     header {
-      background-color: #1f2937;
-      color: white;
-      padding: 2rem 1rem;
+      background: #111;
+      color: #fff;
+      padding: 20px;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-style: italic;
+    header img {
+      max-height: 80px;
     }
     nav {
-      background: #374151;
+      background: #222;
       display: flex;
       justify-content: center;
-      padding: 0.5rem;
+      padding: 10px;
     }
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 1rem;
+      margin: 0 15px;
       font-weight: bold;
     }
     nav a:hover {
       text-decoration: underline;
     }
     section {
-      padding: 2rem 1rem;
-      max-width: 900px;
+      padding: 60px 20px;
+      max-width: 1000px;
       margin: auto;
     }
+    .hero {
+      background: url('https://i.imgur.com/jFjX2du.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+    }
+    .btn {
+      background: #1e90ff;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 20px;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 6px;
+    }
+    .btn:hover {
+      background: #0066cc;
+    }
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
     }
     .gallery img {
-      width: 100%;
+      width: 300px;
       border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
-    form input, form textarea {
+    h2 {
+      text-align: center;
+      color: #444;
+      margin-bottom: 30px;
+    }
+    .merch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .merch-item {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+    }
+    .merch-item img {
       width: 100%;
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
     }
-    form button {
-      background-color: #1f2937;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
+    .merch-item h3 {
+      margin: 15px 0 5px;
     }
-    form button:hover {
-      background-color: #374151;
+    .merch-item p {
+      color: #666;
+      font-size: 0.9em;
     }
     footer {
-      background: #111827;
-      color: white;
+      background: #111;
+      color: #ccc;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+      padding: 30px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Zion Riders</h1>
-    <p>Serving under God's mighty grace – Maggie and Abhoy</p>
-  </header>
 
-  <nav>
-    <a href="#destinations">Destinations</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-    <a href="#suggest">Suggest a Trip</a>
-  </nav>
+<header>
+  <img src="https://i.imgur.com/DYUwqzK.png" alt="Zionriders Logo" />
+  <h1>Zionriders</h1>
+  <p>Under His Mighty Grace</p>
+</header>
 
-  <section id="destinations">
-    <h2>🌍 Destinations We Cover</h2>
-    <ul>
-      <li><strong>India:</strong> Ladakh, Himachal, Sikkim, Northeast, South India & more</li>
-      <li><strong>Nepal:</strong> Pokhara, Mustang, Kathmandu Valley, and beyond</li>
-      <li><strong>Bhutan:</strong> Thimphu, Paro, and Punakha</li>
-    </ul>
-  </section>
+<nav>
+  <a href="#about">About</a>
+  <a href="#join">Join Us</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#mac">Mac</a>
+  <a href="#store">Store</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <section id="gallery">
-    <h2>📸 Our Riding Gallery</h2>
-    <div class="gallery">
-      <img src="https://source.unsplash.com/featured/?motorcycle,roadtrip" alt="Ride 1" />
-      <img src="https://source.unsplash.com/featured/?bike,ladakh" alt="Ride 2" />
-      <img src="https://source.unsplash.com/featured/?mountains,motorbike" alt="Ride 3" />
+<section class="hero">
+  <h1>Ride With Purpose</h1>
+  <p>Every ride we take is under God's mighty grace.</p>
+  <a class="btn" href="#join">Join the Ride</a>
+</section>
+
+<section id="about">
+  <h2>About Zionriders</h2>
+  <p>Zionriders is a community of passionate riders who ride with purpose and grace. Our mission is to explore God's creation and share the journey with those who believe in riding with faith.</p>
+</section>
+
+<section id="join">
+  <h2>Join Us</h2>
+  <p>If you're a biker who believes in more than just speed — if you believe in grace, in purpose, in riding with meaning — then Zionriders welcomes you.</p>
+  <a class="btn" href="mailto:zionridersfaith@gmail.com">Become a Member</a>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://i.imgur.com/h5ZuvNW.jpeg" alt="Ride 1" />
+    <img src="https://i.imgur.com/gCRcfGl.jpeg" alt="Ride 2" />
+    <img src="https://i.imgur.com/yrRR6jP.jpeg" alt="Ride 3" />
+    <img src="https://i.imgur.com/WzUZqFx.jpeg" alt="Ride 4" />
+  </div>
+</section>
+
+<section id="mac">
+  <h2>MAC – Machines for the Apple of the Eye</h2>
+  <p>Our MAC section is dedicated to exclusive, sleek, and elegant bikes that combine technology and grace — bikes that reflect purity, discipline, and premium craft.</p>
+  <img src="https://i.imgur.com/Q2aX3cH.jpeg" alt="Mac Bike" style="width:100%; max-width:600px; display:block; margin: 20px auto; border-radius: 10px;">
+  <a class="btn" href="#contact">Learn More</a>
+</section>
+
+<section id="store">
+  <h2>Zion Merchandise Store</h2>
+  <p style="text-align:center;">Show your faith and style on every ride. From T-shirts to helmets, stickers to keychains — represent Zionriders everywhere you go.</p>
+  <div class="merch-grid">
+    <div class="merch-item">
+      <img src="https://i.imgur.com/yFcRLzK.jpeg" alt="T-shirt" />
+      <h3>Zion T-Shirt</h3>
+      <p>Comfortable cotton with our signature logo. ₹699</p>
     </div>
-  </section>
+    <div class="merch-item">
+      <img src="https://i.imgur.com/UnhFy7Z.jpeg" alt="Patch" />
+      <h3>Iron-On Patch</h3>
+      <p>Perfect for jackets, bags or vests. ₹199</p>
+    </div>
+    <div class="merch-item">
+      <img src="https://i.imgur.com/nrPMJvV.jpeg" alt="Sticker Pack" />
+      <h3>Sticker Pack</h3>
+      <p>5 glossy ride-themed faith stickers. ₹149</p>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:30px;">
+    <a class="btn" href="mailto:zionridersfaith@gmail.com">Shop Now</a>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2>📬 Contact Us</h2>
-    <form action="mailto:zionridersmail@gmail.com" method="POST" enctype="text/plain">
-      <input type="text" name="Name" placeholder="Your Name" required />
-      <input type="email" name="Email" placeholder="Your Email" required />
-      <textarea name="Message" rows="5" placeholder="Write your message here..." required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p style="text-align:center;">Email us at <strong>zionridersfaith@gmail.com</strong> to connect, collaborate, or pray together before your next ride.</p>
+</section>
 
-  <section id="suggest">
-    <h2>🛣️ Suggest Your Own Destination</h2>
-    <p>Got a dream route in mind? Share it with us and let's ride together!</p>
-    <form action="mailto:zionridersmail@gmail.com" method="POST" enctype="text/plain">
-      <input type="text" name="Name" placeholder="Your Name" required />
-      <input type="text" name="Destination" placeholder="Suggest a Place" required />
-      <textarea name="Details" rows="4" placeholder="Why do you want to go there?"></textarea>
-      <button type="submit">Suggest Destination</button>
-    </form>
-  </section>
+<footer>
+  <p>&copy; 2025 Zionriders | Serving under God's mighty grace: Maggie and Abhoy</p>
+</footer>
 
-  <footer>
-    &copy; 2025 Zion Riders | Every Mile, His Grace | Designed by Abhoy Roy
-  </footer>
 </body>
 </html>
